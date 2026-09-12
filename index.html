@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia do Hóspede — Max Carneiros Suítes 324 B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FBF8F3;
+    --bg-raised: #F1EBE0;
+    --ink: #221F1B;
+    --ink-soft: #5B554C;
+    --line: #DDD3C2;
+    --teal: #33605C;
+    --teal-deep: #1F413E;
+    --gold: #B08A2E;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #171613; --bg-raised: #1F1D19; --ink: #EFEAE0; --ink-soft: #B4AC9D;
+      --line: #38352D; --teal: #6FA69F; --teal-deep: #8FC2BB; --gold: #D8B45C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #171613; --bg-raised: #1F1D19; --ink: #EFEAE0; --ink-soft: #B4AC9D;
+    --line: #38352D; --teal: #6FA69F; --teal-deep: #8FC2BB; --gold: #D8B45C;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  a{color:var(--teal-deep);}
+  .wrap{max-width:640px;margin:0 auto;padding:0 20px 80px;}
+  header.hero{background:var(--teal-deep);color:#F4F0E6;padding:44px 20px 30px;text-align:left;}
+  header.hero .eyebrow{font-size:13px;letter-spacing:.02em;color:#C7DAD6;margin:0 0 6px;}
+  header.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(28px,7vw,38px);line-height:1.1;margin:0 0 10px;}
+  header.hero p.sub{margin:0;font-size:15px;color:#DCE7E4;max-width:46ch;}
+  nav.pillnav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  nav.pillnav::-webkit-scrollbar{display:none;}
+  nav.pillnav .inner{display:inline-flex;gap:6px;padding:10px 20px;}
+  nav.pillnav a{display:inline-block;text-decoration:none;color:var(--ink-soft);font-size:13.5px;font-weight:500;padding:7px 12px;border:1px solid var(--line);border-radius:999px;white-space:nowrap;}
+  nav.pillnav a:hover{border-color:var(--teal);color:var(--teal-deep);}
+  main{padding-top:28px;}
+  section{padding:26px 0 30px;border-bottom:1px solid var(--line);scroll-margin-top:56px;}
+  section:last-of-type{border-bottom:none;}
+  section h2{font-family:var(--serif);font-weight:600;font-size:22px;margin:0 0 14px;display:flex;align-items:baseline;gap:10px;}
+  section h2 .ic{font-size:19px;}
+  .field{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line);}
+  .field:last-child{border-bottom:none;}
+  .field .k{font-size:13px;color:var(--ink-soft);}
+  .field .v{font-size:16px;font-weight:600;text-align:right;}
+  .code-block{background:var(--bg-raised);border:1px solid var(--line);padding:16px 18px;margin:14px 0;}
+  .code-block .label{font-size:12px;color:var(--ink-soft);margin-bottom:6px;}
+  .code-block .code{font-family:var(--serif);font-size:26px;font-weight:600;letter-spacing:.03em;color:var(--teal-deep);}
+  p{margin:0 0 12px;color:var(--ink);}
+  p.muted{color:var(--ink-soft);font-size:14.5px;}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:#fff;text-decoration:none;padding:11px 18px;font-size:14.5px;font-weight:600;border-radius:999px;margin:6px 8px 6px 0;}
+  .btn.outline{background:transparent;color:var(--teal-deep);border:1px solid var(--teal);}
+  .btn.gold{background:var(--gold);}
+  ul.plain{list-style:none;margin:0;padding:0;}
+  ul.plain li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px;}
+  ul.plain li:last-child{border-bottom:none;}
+  .taglist{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;}
+  .tag{font-size:13px;padding:6px 11px;background:var(--bg-raised);border:1px solid var(--line);border-radius:999px;}
+  .tag.no{color:var(--ink-soft);text-decoration:line-through;opacity:.75;}
+  .photo-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:14px 0 4px;}
+  .photo-slot{aspect-ratio:1/1;background:var(--bg-raised);border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--ink-soft);text-align:center;padding:6px;}
+  .photo-row img{width:100%;height:100%;object-fit:cover;display:block;}
+  footer{padding:28px 0 10px;text-align:center;font-size:12.5px;color:var(--ink-soft);}
+  footer a{color:var(--ink-soft);}
+  .backtop{display:block;text-align:center;font-size:12.5px;color:var(--teal);text-decoration:none;margin-top:16px;}
+</style>
+</head>
+<body>
+
+<header class="hero" id="topo">
+  <p class="eyebrow">GUIA DO HÓSPEDE</p>
+  <h1>Max Carneiros Suítes<br>324 · Bloco B</h1>
+  <p class="sub">Seja muito bem-vindo(a)! Este guia reúne tudo o que você precisa para o check-in, a estadia e o check-out.</p>
+  <a class="btn gold" style="margin-top:14px" href="https://wa.me/558195214008?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20disponibilidade%20para%20reserva.">📅 Reservar pelo WhatsApp</a>
+</header>
+
+<nav class="pillnav" aria-label="Navegação rápida">
+  <div class="inner">
+    <a href="#reservas">📅 Reservas</a>
+    <a href="#checkin">🔑 Check-in</a>
+    <a href="#localizacao">📍 Localização</a>
+    <a href="#wifi">📶 Wi-Fi</a>
+    <a href="#regras">🚭 Regras</a>
+    <a href="#acomodacao">🛏️ Acomodação</a>
+    <a href="#predio">🏊 Condomínio</a>
+    <a href="#arredores">🌴 Arredores</a>
+    <a href="#checkout">🧳 Check-out</a>
+    <a href="#contato">💬 Contato</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="reservas">
+    <h2><span class="ic">📅</span> Reservas</h2>
+    <p>Quer reservar uma estadia ou tirar dúvidas sobre datas e valores? Fale direto pelo WhatsApp.</p>
+    <a class="btn gold" href="https://wa.me/558195214008?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20disponibilidade%20para%20reserva.">Falar sobre reserva</a>
+  </section>
+
+  <section id="checkin">
+    <h2><span class="ic">🔑</span> Check-in</h2>
+    <div class="field"><span class="k">Horário</span><span class="v">14:00</span></div>
+    <div class="code-block">
+      <div class="label">SENHA DA FECHADURA</div>
+      <div class="code">032426</div>
+    </div>
+    <p>Chegue à recepção do condomínio e informe: unidade 324, bloco B. Não há entrega de chave física.</p>
+    <p><strong>Estacionamento:</strong> 1 vaga gratuita por apartamento, rotativa, descoberta — área interna e fechada, com segurança 24h.</p>
+    <p><strong>Guarda-malas:</strong> este condomínio não possui guarda-volumes para bagagem.</p>
+    <p><strong>Cadastro obrigatório:</strong> cadastro no Green Condomínio (exigência do condomínio), com pré-cadastro pelo app/link oficial antes do check-in para liberação na guarita. São exigidos: nome completo, CPF e RG, e-mail, celular/WhatsApp, estado civil, endereço residencial completo com CEP e dados do veículo (placa, modelo e cor, se houver). Identificação presencial obrigatória na portaria.</p>
+    <a class="btn" href="https://wa.me/558195214008?text=Oi!%20Preciso%20de%20ajuda%20com%20o%20cadastro.">Preciso de ajuda com o cadastro</a>
+  </section>
+
+  <section id="localizacao">
+    <h2><span class="ic">📍</span> Localização</h2>
+    <p>Av. Beira Mar, Tamandaré-PE, CEP 55578-000. Pé na areia — acesso direto da área de lazer para a praia.</p>
+    <p class="muted">Recepção 24h — (81) 9.8744-2997</p>
+    <a class="btn outline" href="https://maps.app.goo.gl/GgTLKqvM3rstieN68" target="_blank" rel="noopener">Abrir no Google Maps</a>
+  </section>
+
+  <section id="wifi">
+    <h2><span class="ic">📶</span> Wi-Fi</h2>
+    <div class="field"><span class="k">Rede</span><span class="v">MAX APT 324 B</span></div>
+    <div class="field"><span class="k">Senha</span><span class="v">Max12345678</span></div>
+  </section>
+
+  <section id="regras">
+    <h2><span class="ic">🚭</span> Regras</h2>
+    <p class="muted">Na unidade</p>
+    <div class="taglist">
+      <span class="tag">🚭 Proibido fumar</span>
+      <span class="tag no">🐾 Não aceita pets</span>
+      <span class="tag">🎉 Sem eventos</span>
+      <span class="tag">📷 Sem filmagem comercial</span>
+      <span class="tag">🔇 Barulho após 22h</span>
+      <span class="tag">🔌 Voltagem 220V</span>
+    </div>
+    <p class="muted">No condomínio</p>
+    <div class="taglist">
+      <span class="tag">🔇 Barulho após 22h</span>
+      <span class="tag">🚭 Proibido fumar</span>
+      <span class="tag no">🔥 Sem churrasqueira a carvão</span>
+      <span class="tag no">🥂 Sem vidro na piscina</span>
+      <span class="tag no">🛸 Sem drones</span>
+      <span class="tag no">🏖️ Sem boia/prancha na piscina</span>
+      <span class="tag no">👕 Sem roupa na varanda/janela</span>
+    </div>
+    <p>Consumo de comida/bebida é permitido na área da piscina, sem taxa (só não dentro d'água). Não é permitido som alto ou caixas de som nas áreas comuns. Crianças não devem ficar sozinhas em elevadores, piscina ou academia.</p>
+  </section>
+
+  <section id="acomodacao">
+    <h2><span class="ic">🛏️</span> Sua acomodação</h2>
+    <p>36m² · até 4 hóspedes (crianças de 2 a 12 anos e bebês abaixo de 2 anos inclusos; sem berço) · loft duplex com suíte no piso superior (cama de casal), sofá-cama de casal na sala (piso térreo), banheiro social e cozinha completa.</p>
+    <div class="taglist">
+      <span class="tag">❄️ Ar-condicionado</span>
+      <span class="tag">📺 Smart TV</span>
+      <span class="tag">🧊 Frigobar</span>
+      <span class="tag">🍳 Cooktop elétrico</span>
+      <span class="tag">🍟 Airfryer 2 em 1</span>
+      <span class="tag">🥪 Sanduicheira</span>
+      <span class="tag">☕ Cafeteira</span>
+      <span class="tag">🥤 Liquidificador</span>
+      <span class="tag">💧 Purificador de água</span>
+      <span class="tag">🍲 Micro-ondas</span>
+      <span class="tag">💨 Secador</span>
+      <span class="tag no">Forno convencional</span>
+      <span class="tag no">Ferro de passar</span>
+      <span class="tag no">Varal</span>
+      <span class="tag no">Máquina de lavar</span>
+      <span class="tag no">Panela de pressão</span>
+    </div>
+    <p><strong>Enxoval e limpeza:</strong> limpeza feita antes do check-in. Enxoval: jogo completo de lençóis, travesseiros e mantas (por cama) + toalha de banho grande (1 por hóspede) + toalha de rosto (por banheiro). Sem troca diária. Limpeza extra ou troca de enxoval durante a estadia: contratação direta com a parceira Everton Limpeza — (81) 9.8690-4927. Não são fornecidos produtos de limpeza, sacos de lixo, alimentos ou água.</p>
+    <div class="photo-row">
+      <img src="fotos/sala-cozinha.jpg" alt="Sala e cozinha, vista do mezanino">
+      <img src="fotos/entrada-cozinha.jpg" alt="Corredor de entrada e cozinha">
+      <img src="fotos/sofa-cama.jpg" alt="Sofá-cama de casal no piso térreo">
+    </div>
+  </section>
+
+  <section id="predio">
+    <h2><span class="ic">🏊</span> O condomínio</h2>
+    <p>Pé na areia — acesso direto da área de lazer para a praia de Tamandaré.</p>
+    <ul class="plain">
+      <li>Piscina adulto, infantil, prainha e deck molhado</li>
+      <li>Academia / espaço fitness</li>
+      <li>Playground / espaço kids</li>
+      <li>Quadra de esporte / beach tennis</li>
+      <li>Salão gourmet climatizado</li>
+      <li>Churrasqueiras reserváveis</li>
+      <li>Estacionamento gratuito interno</li>
+      <li>Recepção 24h</li>
+    </ul>
+    <p class="muted">Sem restaurante, café da manhã/refeições inclusas, lavanderia, guarda-volumes, limpeza diária inclusa ou garçom exclusivo na praia.</p>
+  </section>
+
+  <section id="arredores">
+    <h2><span class="ic">🌴</span> Arredores</h2>
+    <p><strong>Praias:</strong> Praia de Tamandaré (pé na areia) · Praia dos Carneiros (≈2,5 km) · Praia de Campas (≈2 km)</p>
+    <p><strong>Restaurantes e bares de praia:</strong> Bora Bora Carneiros · Beijupirá Carneiros · Restaurante Mustique · Jobar Restaurante</p>
+    <p><strong>Mercado e farmácia:</strong> Supermercado Verde Mar (Tamandaré) · Drogaria Líder e farmácias centrais em Tamandaré</p>
+    <p><strong>Passeios:</strong> Banho de lama no Rio Formoso · Passeio de barco às Piscinas Naturais e Banco de Areia · Igrejinha de São Benedito</p>
+    <p><strong>Saúde e emergência:</strong> Hospital Municipal de Tamandaré (centro de Tamandaré)</p>
+  </section>
+
+  <section id="checkout">
+    <h2><span class="ic">🧳</span> Check-out</h2>
+    <div class="field"><span class="k">Horário</span><span class="v">11:00</span></div>
+    <ul class="plain">
+      <li>✓ Desligar ar-condicionado, TV e luzes</li>
+      <li>✓ Fechar janelas e a porta da entrada e varanda</li>
+      <li>✓ Conferir se não esqueceu pertences</li>
+      <li>✓ Avisar a portaria que está saindo</li>
+    </ul>
+    <a class="btn" href="https://wa.me/558195214008?text=Estou%20saindo%20agora%2C%20foi%20tudo%20bem%20por%20aqui!">🙂 Foi tudo bem</a>
+    <a class="btn outline" href="https://wa.me/558195214008?text=Estou%20saindo%20agora.%20Tive%20um%20problema%20durante%20a%20estadia%20e%20gostaria%20de%20comentar.">😕 Não gostei</a>
+  </section>
+
+  <section id="contato">
+    <h2><span class="ic">💬</span> Contato</h2>
+    <p>Estamos aqui para ajudar em qualquer momento da sua estadia. É só chamar.</p>
+    <a class="btn gold" href="https://wa.me/558195214008">Falar no WhatsApp</a>
+    <p class="muted" style="margin-top:10px">Estes contatos (WhatsApp e telefones) são os da empresa que administra o imóvel hoje. Quando sua sogra assumir a gestão direta, troque pelos números dela.</p>
+  </section>
+
+  <a class="backtop" href="#topo">↑ Voltar ao início</a>
+
+  <footer>
+    Guia de uso exclusivo dos hóspedes.
+  </footer>
+
+</main>
+
+</body>
+</html>
